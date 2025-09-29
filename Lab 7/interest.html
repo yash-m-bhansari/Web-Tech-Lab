@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rahul Verma | Portfolio</title>
+	<link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+	<div class="main">
+		<h4>Enter values to calculate interest</h4>
+			<table id="intInp">
+			<tr>
+				<td><label for="p">Principal amount (Rs.): </label></td>
+				<td><input type="number" name="p" id="p" min="0" placeholder="0"></td>
+			</tr>
+			<tr>
+				<td><label for="r">Rate of interest (%): </label></td>
+				<td><input type="number" name="r" id="r" min="0" max="100" placeholder="0"></td>
+			</tr>
+			<tr>
+				<td><label for="t">Time (years): </label></td>
+				<td><input type="number" name="t" id="t" min="0" placeholder="0"></td>
+			</tr>
+		</table>
+		<p>Interest: Rs. <span id="intAmt">0</span></p>
+
+		<button type="submit" id="toPort">Go Back</button>
+	</div>
+	<script src="interest.js"></script>
+</body>
+
+</html>
