@@ -26,6 +26,7 @@ document.getElementById("registerBtn").addEventListener("click", () => {
 });
 
 document.getElementById("signOutBtn").addEventListener("click", () => {
+	window.location.href = "session_logout.php";
 	localStorage.removeItem("isLoggedIn");
 	showAuthButtons();
 });
@@ -56,4 +57,16 @@ document.getElementById("postCalc").addEventListener("click", () => {
 
 document.getElementById("dbconn").addEventListener("click", () => {
 	window.location.href = "dbconn.php";
+});
+
+document.getElementById("cookieReg").addEventListener("click", () => {
+	window.location.href = "cookies_register.php";
+	localStorage.setItem("isLoggedIn", "true");
+	showUserButtons();
+});
+
+document.getElementById("sessionLog").addEventListener("click", () => {
+	window.location.href = "session_login.php";
+	localStorage.setItem("isLoggedIn", "true");
+	showUserButtons();
 });

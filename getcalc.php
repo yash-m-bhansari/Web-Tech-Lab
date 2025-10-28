@@ -32,8 +32,8 @@
         echo "<h3>Results:</h3>";
 		echo "<table>
 		<tr><td>$a</td><td>+</td><td>$b</td><td>=</td><td>".($a + $b)."</td></tr>
-		<tr><td>$a</td><td>+</td><td>$b</td><td>=</td><td>".($a - $b)."</td></tr>
-		<tr><td>$a</td><td>+</td><td>$b</td><td>=</td><td>".($a * $b)."</td></tr>
+		<tr><td>$a</td><td>-</td><td>$b</td><td>=</td><td>".($a - $b)."</td></tr>
+		<tr><td>$a</td><td>*</td><td>$b</td><td>=</td><td>".($a * $b)."</td></tr>
 		</table>";
     }
     ?>
